@@ -9,7 +9,7 @@ class HeaderFooter
 	 */
 	public static function hOutputPageParserOutput( &$op, $parserOutput ) {
 
-		$action = $op->parserOptions()->getUserIdenity()->getRequest()->getVal("action");
+		$action = $op->parserOptions()->getUserIdentity()->getRequest()->getVal("action");
 		if ( ($action == 'edit') || ($action == 'submit') || ($action == 'history') ) {
 			return true;
 		}
